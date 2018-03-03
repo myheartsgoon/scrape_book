@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
+     <link href="{{ url_for('static', filename='css/main.css') }}?Thursday 24th of April 2008 04:45:21 PM" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+     <script src="https://code.jboxcdn.com/0.4.9/jBox.js"></script>
+     <link href="https://code.jboxcdn.com/0.4.9/jBox.css" rel="stylesheet">
+     <link href="https://code.jboxcdn.com/0.4.9/themes/TooltipDark.css" rel="stylesheet">
+     <link href="{{ url_for('static', filename='font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
+     <link rel="icon" href="{{ url_for('static', filename = 'img/favicon.ico') }}" type="image/x-icon">
+  </head>
+
+  <body>
+      <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+         <a class="navbar-brand" href="{{ url_for('ysqc') }}">Jelly看小说</a>
+          <ul class="nav navbar-nav">
+            <li><a href="{{ url_for('home') }}" title="Home - 所有小说">Home</a></li>
+            <li><a href="{{ url_for('ysqc') }}" title="一世倾城">一世倾城</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">其他小说<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">待定</a></li>
+                <li><a href="#">待定2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      </nav>
+
+
+
+    {% block content %}
+    {% endblock %}
+
+      <footer class="footer bg-light top-buffer">
+      <div class="container">
+        <div class="row top-buffer">
+          <div class="col-xs-12 col-md-12 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Usage</a>
+              </li>
+            </ul>
+
+              <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="https://weibo.com/myheartsgoon">
+                  <i class="fa fa-weibo fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/myheartsgoon/AWS-boto">
+                  <i class="fa fa-github fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="mailto:myheartsgoon@gmail.com">
+                  <i class="fa fa-envelope fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">&copy; AWS Utility 2018. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

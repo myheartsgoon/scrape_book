@@ -1,0 +1,208 @@
+/* 
+ * General
+ */
+html, body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 { font-family: Microsoft YaHei,'宋体' , Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;}
+
+body {
+  background-color: #f4f4f4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-weight: 300;
+  letter-spacing: -1.2px;
+  text-align : center;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  #color: #3375e0;
+}
+
+a:hover { text-decoration: underline; }
+
+
+.top-buffer{
+    margin-top:50px;
+}
+
+.note{
+    text-align: left;
+    font-weight: bold;
+}
+
+/* 
+ * Header
+ */
+
+header {
+  background-color: #fff;
+  padding: 25px 0;
+}
+
+.title {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.corner {
+  float:right;
+  margin: 5px;
+}
+
+.form-div {
+	width: 300px;
+	margin: 0 auto;
+    clear: both;
+}
+.form-div input {
+	width: 130%;
+	margin: 0 auto;
+    clear: both;
+}
+
+form .error-msg {
+    color: #db4437;
+}
+
+.form-div .buttom {
+	width: 100px;
+	margin: 0 auto;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.div-default {
+    width: 50%;
+    margin: auto;
+
+}
+
+.div-bucket {
+    width: 40%;
+    margin: auto;
+
+}
+
+.div-instances{
+    width: 50%;
+    margin: auto;
+}
+
+
+.div-files {
+    width: 50%;
+    margin: auto;
+
+}
+
+
+.flash_message{
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.bucket{
+    border-bottom: 1px solid #ced6e2;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.bucket a{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+
+.files{
+    border-bottom: 1px solid #ced6e2;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.files a{
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+table, th, td {
+
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.stopped_ec2 {
+    color: #db4437;
+    font-weight: bold;
+}
+
+.running_ec2 {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.icon-passed {
+  color: green;
+}
+
+.icon-failed {
+  color: #f4bb41;
+}
+
+.ec2_button{
+    margin-left: 25px;
+}
+
+.detail_label{
+    float: left;
+    width:150px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.detail_content{
+    margin-left:150px;
+    margin-bottom: 10px;
+}
+
+.detail-staus{
+    margin-right: 10px;
+}
+
+.block_device{
+    width: 60px;
+    margin-left: 20px
+}
+
+.title{
+    text-align: center;
+}
+
+.modal-dialog {
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal.fade .modal-dialog {
+  transform: translate(0, -100%);
+}
+
+.modal.in .modal-dialog {
+  transform: translate(0, 0);
+}
