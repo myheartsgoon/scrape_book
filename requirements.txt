@@ -13,6 +13,7 @@ Jinja2==2.9.6
 MarkupSafe==1.0
 ordereddict==1.1
 psycopg2==2.7.1
+requests==2.14.2
 SQLAlchemy==1.1.11
 Werkzeug==0.12.2
 WTForms==2.1
